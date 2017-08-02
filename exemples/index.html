@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Passo 1</title>
+</head>
+<body>
+	<canvas id="meu_canvas" width="300" height="300">
+		Browser veio!
+	</canvas>
+	<script type="text/javascript">
+		//Canvas e contexto
+		var canvas = document.getElementById('meu_canvas');
+		var contexto = canvas.getContext('2d');
+		//Iniciar um caminho
+		contexto.beginPath();
+		//Desenhar a estrela
+		contexto.moveTo(75, 250); //ponto inicial
+		contexto.lineTo(150, 150);
+		contexto.lineTo(225, 250);
+		contexto.lineTo(75, 250);
+
+		/*contexto.lineTo(50, 120);
+		contexto.lineTo(250, 120);
+		contexto.lineTo(75, 250);*/
+
+		//Configurar linha
+		contexto.lineWidth = 2;
+		contexto.strokeStyle = 'blue';
+		contexto.stroke();
+
+
+
+		//Desenhar um retangulo
+		/*contexto.lineWidth = 3;
+		contexto.fillStyle = 'red';
+		contexto.fillRect(0, 0, 100, 100);
+		contexto.strokeStyle = 'blue';
+		contexto.strokeRect(50, 50, 100, 100);*/		
+	</script>
+</body>
+</html>
